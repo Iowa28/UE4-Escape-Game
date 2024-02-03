@@ -17,6 +17,8 @@ public:
 	UDoorOpener();
 	
 	void OpenDoor() const;
+	
+	void CloseDoor() const;
 
 protected:
 	virtual void BeginPlay() override;
@@ -26,11 +28,15 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere)
-	float OpenAngle = 60.f;
+	float OpenAngle = 90.f;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate;
 
 	UPROPERTY(EditAnywhere)
+	float DoorCloseDelay = 1.f;
+	float LastDoorOpenTime;
+	
+	AActor* Owner;
 	AActor* ActorThatOpens;
 };
