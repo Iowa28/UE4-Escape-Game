@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31105464-badf-4700-a143-17d6b6aa5fbf" name="Changes" comment="">
+    <list default="true" id="31105464-badf-4700-a143-17d6b6aa5fbf" name="Changes" comment="calculating overlapping mass">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_DefaultPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_DefaultPawn.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Level01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Level01.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_TableRound.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Props/Materials/M_TableRound.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.h" afterDir="false" />
     </list>
@@ -20,6 +24,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/include/vcruntime.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/naminov/Documents/Unreal Projects/UdemyProject1/Source/UdemyProject1/Grabber.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2bw33ymMrlda0urWXsLvAEXvKhW" />
@@ -174,7 +179,9 @@
       <option name="presentableId" value="Default" />
       <updated>1707112124804</updated>
       <workItem from="1707112126565" duration="3731000" />
-      <workItem from="1707158232642" duration="3027000" />
+      <workItem from="1707158232642" duration="3078000" />
+      <workItem from="1707193135160" duration="1326000" />
+      <workItem from="1707225265996" duration="2811000" />
     </task>
     <task id="LOCAL-00001" summary="binding input">
       <option name="closed" value="true" />
@@ -184,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707117036452</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="grabbing items">
+      <option name="closed" value="true" />
+      <created>1707161336258</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707161336258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +220,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="binding input" />
-    <option name="LAST_COMMIT_MESSAGE" value="binding input" />
+    <MESSAGE value="grabbing items" />
+    <MESSAGE value="calculating overlapping mass" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculating overlapping mass" />
   </component>
 </project>

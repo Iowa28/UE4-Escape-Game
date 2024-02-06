@@ -15,15 +15,11 @@ class UDEMYPROJECT1_API UDoorOpener : public UActorComponent
 
 public:	
 	UDoorOpener();
-	
-	void OpenDoor() const;
-	
-	void CloseDoor() const;
 
 protected:
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
@@ -38,5 +34,10 @@ private:
 	float LastDoorOpenTime;
 	
 	AActor* Owner;
-	AActor* ActorThatOpens;
+
+	void OpenDoor() const;
+	
+	void CloseDoor() const;
+
+	float GetTotalMassOfActorsOnPlate() const;
 };
