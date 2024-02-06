@@ -16,6 +16,11 @@ void UGrabber::BeginPlay()
 	Super::BeginPlay();
 
 	PhysicsHande = GetOwner()->FindComponentByClass<UPhysicsHandleComponent>();
+
+	if (!PhysicsHande)
+	{
+		UE_LOG(LogTemp, Error, TEXT("%s missing physics handle component"), *GetOwner()->GetName());
+	}
 	
 	InputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
 	if (InputComponent)
@@ -30,6 +35,11 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	if (!PhysicsHande)
+	{
+		return;
+	}
+
 	if (PhysicsHande->GrabbedComponent)
 	{
 		PhysicsHande->SetTargetLocation(GetReachLineEnd());
@@ -38,6 +48,11 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 
 void UGrabber::Grab()
 {
+	if (!PhysicsHande)
+	{
+		return;
+	}
+	
 	FHitResult Hit = GetFirstPhysicsBodyInReach();
 
 	if (Hit.GetActor())
@@ -55,6 +70,11 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+	if (!PhysicsHande)
+	{
+		return;
+	}
+	
 	PhysicsHande->ReleaseComponent();
 }
 

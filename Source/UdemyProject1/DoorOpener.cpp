@@ -16,12 +16,18 @@ void UDoorOpener::BeginPlay()
 	Super::BeginPlay();
 
 	Owner = GetOwner();
+
+	if (!PressurePlate)
+	{
+		UE_LOG(LogTemp, Error, TEXT("%s missing pressure plate"), *Owner->GetName());
+	}
 }
 
 void UDoorOpener::OpenDoor() const
 {
-	const FRotator NewRotation = FRotator(0.f, OpenAngle, 0.f);
-	Owner->SetActorRotation(NewRotation);
+	// const FRotator NewRotation = FRotator(0.f, OpenAngle, 0.f);
+	// Owner->SetActorRotation(NewRotation);
+	OnOpenRequest.Broadcast();
 }
 
 void UDoorOpener::CloseDoor() const
@@ -34,6 +40,11 @@ void UDoorOpener::CloseDoor() const
 void UDoorOpener::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if (!PressurePlate)
+	{
+		return;
+	}
 
 	if (GetTotalMassOfActorsOnPlate() > 25.f)
 	{
