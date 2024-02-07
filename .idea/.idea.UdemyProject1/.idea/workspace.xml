@@ -9,11 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="31105464-badf-4700-a143-17d6b6aa5fbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_OpenableDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_OpenableDoor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Level01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Level01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +178,7 @@
       <workItem from="1707193135160" duration="1326000" />
       <workItem from="1707225265996" duration="6001000" />
       <workItem from="1707234103625" duration="4123000" />
-      <workItem from="1707278734238" duration="1945000" />
+      <workItem from="1707278734238" duration="3020000" />
     </task>
     <task id="LOCAL-00001" summary="binding input">
       <option name="closed" value="true" />
@@ -215,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707239614372</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="door initial rotation">
+      <option name="closed" value="true" />
+      <created>1707281776163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707281776163</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +244,7 @@
     <MESSAGE value="grabbing items" />
     <MESSAGE value="calculating overlapping mass" />
     <MESSAGE value="linear door open" />
-    <option name="LAST_COMMIT_MESSAGE" value="linear door open" />
+    <MESSAGE value="door initial rotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="door initial rotation" />
   </component>
 </project>
