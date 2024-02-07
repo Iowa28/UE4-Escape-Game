@@ -8,15 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31105464-badf-4700-a143-17d6b6aa5fbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/BP_OpenableDoor.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Cutom_Pulse.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UdemyProject1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_DefaultPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_DefaultPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_OpenableDoor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_OpenableDoor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Level01.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Level01.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Props/SM_Door.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Props/SM_Door.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/DoorOpener.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UdemyProject1/Grabber.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +180,8 @@
       <workItem from="1707158232642" duration="3078000" />
       <workItem from="1707193135160" duration="1326000" />
       <workItem from="1707225265996" duration="6001000" />
-      <workItem from="1707234103625" duration="3910000" />
+      <workItem from="1707234103625" duration="4123000" />
+      <workItem from="1707278734238" duration="1945000" />
     </task>
     <task id="LOCAL-00001" summary="binding input">
       <option name="closed" value="true" />
@@ -209,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707228108779</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="linear door open">
+      <option name="closed" value="true" />
+      <created>1707239614371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707239614372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +238,7 @@
     <MESSAGE value="binding input" />
     <MESSAGE value="grabbing items" />
     <MESSAGE value="calculating overlapping mass" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculating overlapping mass" />
+    <MESSAGE value="linear door open" />
+    <option name="LAST_COMMIT_MESSAGE" value="linear door open" />
   </component>
 </project>

@@ -23,19 +23,6 @@ void UDoorOpener::BeginPlay()
 	}
 }
 
-void UDoorOpener::OpenDoor() const
-{
-	// const FRotator NewRotation = FRotator(0.f, OpenAngle, 0.f);
-	// Owner->SetActorRotation(NewRotation);
-	OnOpenRequest.Broadcast();
-}
-
-void UDoorOpener::CloseDoor() const
-{
-	const FRotator NewRotation = FRotator(0.f, 0.f, 0.f);
-	Owner->SetActorRotation(NewRotation);
-}
-
 
 void UDoorOpener::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
@@ -46,15 +33,13 @@ void UDoorOpener::TickComponent(float DeltaTime, ELevelTick TickType, FActorComp
 		return;
 	}
 
-	if (GetTotalMassOfActorsOnPlate() > 25.f)
+	if (GetTotalMassOfActorsOnPlate() > TriggerMass)
 	{
-		OpenDoor();
-		LastDoorOpenTime = GetWorld()->GetTimeSeconds();
+		OnOpen.Broadcast();
 	}
-	
-	if (GetWorld()->GetTimeSeconds() - LastDoorOpenTime > DoorCloseDelay)
+	else
 	{
-		CloseDoor();
+		OnClose.Broadcast();
 	}
 }
 
@@ -72,4 +57,3 @@ float UDoorOpener::GetTotalMassOfActorsOnPlate() const
 
 	return TotalMass;
 }
-
